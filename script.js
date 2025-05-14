@@ -1,3 +1,7 @@
+//Global score variables
+let humanScore = 0;
+let computerScore = 0;
+
 //Function to get computer's random choice
 function getComputerChoice() {
     const randomNumber = Math.random();
@@ -10,9 +14,11 @@ function getComputerChoice() {
     }
 }
 
-// Step 3: Function to get human's choice
+//Function to get human's choice
 function getHumanChoice() {
     return prompt("Enter rock, paper, or scissors:").toLowerCase();
   }
+ 
+
 
 
