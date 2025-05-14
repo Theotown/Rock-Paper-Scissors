@@ -10,3 +10,9 @@ function getComputerChoice() {
     }
 }
 
+// Step 3: Function to get human's choice
+function getHumanChoice() {
+    return prompt("Enter rock, paper, or scissors:").toLowerCase();
+  }
+
+
