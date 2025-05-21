@@ -43,5 +43,7 @@ body {
 #message {
     font-weight: bold;
     margin-top: 1.5rem;
-
+    font-size: 1.75rem;
+    align-items: center;
+    transition: 0.3s ease;
 }
