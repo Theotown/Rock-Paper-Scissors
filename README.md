@@ -1,52 +1,68 @@
 # Rock-Paper-Scissors
 
+## 🕹️ Overview
 
-## Overview
-
-This is a simple **Rock, Paper, Scissors** game implemented using JavaScript, where the user plays against the computer. The game runs for **5 rounds**, keeping track of the scores and announcing a final winner based on the total score.
-
-## Features
-
-- **Human vs Computer**: The game simulates a match where the human player chooses between "rock", "paper", or "scissors", and the computer randomly selects one of the same options.
-- **5 Rounds**: The game is played over **5 rounds**, and the score is updated after each round.
-- **Case Insensitivity**: The human's input is case-insensitive, so they can input `"Rock"`, `"rock"`, `"RoCk"`, etc.
-- **Round Winner**: After each round, the winner is displayed, and the score is updated.
-- **Game End**: After 5 rounds, the game announces the winner based on the score, or if it's a tie.
-
-## Setup
-
-1. Create a new folder for your project.
-2. Inside the folder, create:
-   - `index.html` (your HTML file)
-   - `script.js` (your JavaScript file)
-3. Link your `script.js` file inside your HTML file.
-4. Open the `index.html` file in a browser to play the game.
-
-## How It Works
-
-### 1. **Computer's Choice**:  
-The computer's choice is randomly selected from "rock", "paper", or "scissors" using the `Math.random()` method.
-
-### 2. **Human's Choice**:  
-The player is prompted to enter "rock", "paper", or "scissors". The input is case-insensitive, so it doesn't matter if the player types `"rock"`, `"Rock"`, `"ROCK"`, etc.
-
-### 3. **Round Logic**:  
-Each round compares the human's choice to the computer's choice:
-- If the choices are the same, it's a tie.
-- If the human wins, the human's score is incremented.
-- If the computer wins, the computer's score is incremented.
-
-### 4. **Game Loop**:  
-The game loops for 5 rounds, and the scores are updated after each round. After all 5 rounds, the player is declared the winner based on the total score.
+This is a browser-based **Rock, Paper, Scissors** game built with HTML, CSS, and JavaScript. The player competes against the computer by clicking one of three emoji buttons (✊, ✋, ✌️), and the game displays results in real-time with animated emojis and score updates.
 
 ---
 
-## Future Enhancements
+## ✨ Features
 
-- Add input validation for incorrect or incomplete user input.
-- Display a graphical user interface (GUI) with buttons for choices.
-- Allow the player to choose the number of rounds to play.
+- **Interactive UI**: Choose between Rock, Paper, or Scissors by clicking emoji buttons.
+- **Emoji Feedback**: Shows the player's and computer's choices with large, styled emojis.
+- **Live Scoreboard**: Tracks and displays rounds, player score, and computer score.
+- **Dynamic Results**: Displays round result messages with styling and transition effects.
+- **Responsive Design**: Layout is centered and adapts to screen size.
 
-## License
+---
 
-This project is for learning propose.
+## 🛠️ Setup
+
+1. Clone or download this repository.
+2. Open `index.html` in any modern web browser.
+3. Click on an emoji to start playing!
+
+**File structure:**
+
+├── index.html
+├── style.css
+└── script.js
+
+---
+
+## 📦 How It Works
+
+### 🎲 Computer's Choice
+- The computer randomly selects one of the three options: rock, paper, or scissors.
+
+### 🧍 Player's Choice
+- The player clicks one of the emoji buttons:
+  - ✊ Rock
+  - ✋ Paper
+  - ✌️ Scissors
+
+### ⚖️ Result Evaluation
+- The game compares the choices and displays:
+  - A message indicating win, lose, or tie.
+  - Updated scores for both the player and computer.
+  - Emoji representation of both choices.
+
+### 🔄 Game Flow
+- The game runs continuously, tracking the round number with each move.
+- The result message is styled with color and emoji based on outcome.
+
+---
+
+## 🔮 Future Enhancements
+
+- Add a game over screen after a fixed number of rounds (e.g. 5).
+- Add sound effects for player moves and results.
+- Allow difficulty modes or smarter computer AI.
+- Track and display game history or win streaks.
+- Add mobile-optimized styles or animations.
+
+---
+
+## 📄 License
+
+This project is for educational and personal learning purposes.
